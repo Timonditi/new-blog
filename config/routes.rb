@@ -29,5 +29,5 @@ Rails.application.routes.draw do
   patch "/user/:id", to:"users#update"
   delete "/user/:id", to:"users#destroy"
 
-  get "parts", to:"react#index"
+  # get "parts", to:"react#index"
 end
