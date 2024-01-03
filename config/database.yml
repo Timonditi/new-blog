@@ -10,7 +10,7 @@ default: &default
   timeout: 5000
 
 development:
-  url: postgresql://blogdb_9wla_user:0QsG6wuOVhXkXoowb4uvbxnpDfLQXjXf@dpg-cmajjomd3nmc73cr1ds0-a.oregon-postgres.render.com/blogdb_9wla
+  url: postgresql://blogdb_9wla_user:0QsG6wuOVhXkXoowb4uvbxnpDfLQXjXf@dpg-cmajjomd3nmc73cr1ds0-a/blogdb_9wla
   # <<: *default
   # database: db/development.sqlite3
 
