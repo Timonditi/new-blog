@@ -5,6 +5,9 @@ Welcome to SportsBlog! This is a web application that allows users to create and
 
 Visit the live site: https://sportsblog-890a.onrender.com/
 
+
+# AUTHOR: Timothy Odongo
+
 # Features
 <ul>
 <li>User Registration: Create an account to unlock personalized features, such as creating and managing your blog posts.</li>
@@ -17,22 +20,19 @@ Visit the live site: https://sportsblog-890a.onrender.com/
 </ul>
 
 # Getting Started
-To get started with SportsBlog, follow these steps:
+To use the Blog App, follow these steps:
+<ol>
+<li>Clone the repository to your local machine</li>
+<li>Open terminal command line then navigate to the root folder of the application.</li>
+<li>Bundle install to install the dependancies</li>
+<li>start the server by typing "Rails s" to start the application. But first you need to migrate and seed data. This is done by typing "rails db:migrate db:seed" on the terminal.</li>
+</ol>
 
-Visit the Live Site: Go to https://sportsblog-890a.onrender.com/ to explore the platform.
+# MIT License
+Copyright (c) 2024 
 
-Create an Account: Click on the "Sign Up" button to create a new account. Provide the necessary information and verify your email to activate your account.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Explore and Contribute: Once logged in, you can start exploring existing blog posts, leave comments, and interact with the community. To create your own blog posts, click on the "Create Post" button in your dashboard.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Customize Your Profile: Navigate to the profile section to customize your profile picture, bio, and social media links.
-
-.
-
-Issues and Support
-If you encounter any issues while using SportsBlog or have suggestions for improvement, please open an issue on our GitHub repository.
-
-
-
-License
-SportsBlog is licensed under the MIT License.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
