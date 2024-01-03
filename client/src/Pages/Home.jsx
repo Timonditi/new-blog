@@ -15,7 +15,7 @@ export default function Home() {
               <img className="h-auto max-w-full rounded-lg" src={post.image} alt="" />
               <div className='p-3'>
                 <h4 className='font-bold text-xl'>{post.title}</h4>
-                <p className='text-orange-500 font-bold'> Posted by {post.user.username}</p>
+                <p className='text-orange-500 font-bold'> Posted by {post.user?.username}</p>
               </div>
             </Link>
           ))}
