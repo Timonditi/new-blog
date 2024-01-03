@@ -1,5 +1,5 @@
 # Create posts
-user = User.first
+user = 1
 
 posts_data =[
   {
