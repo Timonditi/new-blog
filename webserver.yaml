@@ -1,6 +1,7 @@
 ---
 - name: Set up web server
-  hosts: all
+  hosts: localhost
+  connection: local
   become: yes
 
   tasks:
