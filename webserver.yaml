@@ -5,16 +5,10 @@
 
   tasks:
     - name: Update apt cache
-      apt:
-        update_cache: yes
+      shell: apt update -y
 
     - name: Install Nginx
-      apt:
-        name: nginx
-        state: present
+      shell: apt install -y nginx
 
-    - name: Ensure Nginx is running
-      service:
-        name: nginx
-        state: started
-        enabled: yes
+    - name: Ensure Nginx is enabled and started
+      shell: systemctl enable --now nginx
