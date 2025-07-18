@@ -1,5 +1,5 @@
 ---
-- name: Set up web server
+- name: Set up web server and deploy Docker stack
   hosts: webservers
   become: yes
   gather_facts: no
@@ -13,3 +13,19 @@
 
     - name: Ensure Nginx is enabled and started
       shell: systemctl enable --now nginx
+
+    - name: Install Docker
+      shell: |
+        curl -fsSL https://get.docker.com -o get-docker.sh
+        sh get-docker.sh
+
+    - name: Initialize Docker Swarm (if not already)
+      shell: docker swarm init || true
+
+    - name: Copy docker-compose.yml to server
+      copy:
+        src: docker-compose.yml
+        dest: /tmp/docker-compose.yml
+
+    - name: Deploy Docker stack
+      shell: docker stack deploy -c /tmp/docker-compose.yml mystack
